@@ -15,12 +15,17 @@ body, html {
 .bgimg {
   background-position: center;
   background-size: cover;
+
   background-image: url("images/chickeribs.jpg");
   min-height: 75%;
 }
 
 .menu {
   display: none;
+}
+
+.background{
+  background-color: none;
 }
 </style>
 </head>
@@ -47,7 +52,7 @@ body, html {
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
-    <span class="w3-tag">Open from 11:30am to 9pm</span>
+    <span class="w3-tag">SLOW COOKED WOOD FIRED! AUTHENTIC BBQ.</span>
   </div>
   <div class="w3-display-middle w3-center">
     <span class="w3-text-white" style="font-size:90px">Chick E Ribs<br></span>
@@ -76,10 +81,12 @@ Thank you for making CHICK E RIBS THE #1 BBQ SPOT IN SULLIVAN COUNTY.
 Stop in and see us today. We guarantee you will leave full and happy! </p><br>
     <div class="w3-panel w3-leftbar w3-light-grey">
       <p><i>"Great people, great food and great prices, what's not to love?? Pulled pork sandwich is on point along with the brisket.
-        Pulled pork/Cole slaw hot dog is simply devine. Will absolutely, definitely be back in the future.""</i></p>
+        Pulled pork/Cole slaw hot dog is simply devine. Will absolutely, definitely be back in the future."</i></p>
       <p>-Frank S.</p>
     </div>
+    <div class = "background">
     <img src="/w3images/coffeeshop.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+  </div>
     <p><strong>Opening hours:</strong> Wednesday through Sunday, 11:30AM - 9PM</p>
     <p><strong>Address:</strong> 1987 NY-52, Liberty, NY 12754</p>
   </div>
@@ -91,12 +98,15 @@ Stop in and see us today. We guarantee you will leave full and happy! </p><br>
 
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
 
+    <h5 >SLOW COOKED FALL OF THE BONE RIBS, TENDER JUICY BRISKET,
+       DELICIOUS PULLED PORK, BBQ CHICKEN, SAUSAGE/PEPPERS/ONIONS, VARIOUS HOMEMADE SIDES</span></h5> <br>
+
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
-        <div class="w3-col s6 tablink">Eat</div>
+        <div class="w3-col s6 tablink">First Slide</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
-        <div class="w3-col s6 tablink">Drink</div>
+        <div class="w3-col s6 tablink">Second Slide</div>
       </a>
     </div>
 
@@ -108,41 +118,67 @@ Stop in and see us today. We guarantee you will leave full and happy! </p><br>
       <p class="w3-text-grey">$10.50 1/3 Rack with 2 sides</p> <br>
 
       <h5>Brisket</h5>
-      <p class="w3-text-grey">10$ Brisket Sandwich</p>
-      <p class="w3-text-grey">12$ Brisket Sandwich with Side/Drink</p>
-      <p class="w3-text-grey">15$ Brisket Dinner</p> <br>
+      <p class="w3-text-grey">$10 Brisket Sandwich</p>
+      <p class="w3-text-grey">$12 Brisket Sandwich with Side/Drink</p>
+      <p class="w3-text-grey">$15 Brisket Dinner</p> <br>
 
       <h5>Chicken (Friday - Sunday Only!)</h5>
       <p class="w3-text-grey">$8.75 1/2 Chicken &#8226; $11.75 1/2 Chicken with 2 sides</p> <br>
 
-      <h5>Scrambled eggs</h5>
-      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+      <h5>Pulled pork</h5>
+      <p class="w3-text-grey">$8.50 Pulled Pork Sandwich</p>
+      <p class="w3-text-grey">$10.50 Pulled Pork Sandwich with Side/Drink</p>
+      <p class="w3-text-grey">$12 Pulled Pork Dinnner</p><br>
 
-      <h5>Blueberry Pancakes</h5>
-      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>
+      <p class="w3-text-grey">$6.50 Loaded Pulled Pork Fries</p>
+      <p class="w3-text-grey">$7.50 Loaded Brisket Fries With Cheese, Bacon Bits, and a Side of Sour Cream</p><br>
+
+
+      <h5>Sausage</h5>
+      <p class="w3-text-grey">$8.50 Sausage and Peppers Sandwich</p>
+      <p class="w3-text-grey">$10.50 Sausage and Peppers Sandwich  with Side Drink</p>
+      <p class="w3-text-grey">$12 Sausage and Peppers Dinner</p>
     </div>
 
     <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
 
-      <h4> All drinks are 1 dollar! </h4> <br>
 
-      <h5>Pepsi</h5>
-      <p class="w3-text-grey"></p><br>
+      <h5>Lunch Specials! (Comes with a can of soda)</h5>
+      <p class="w3-text-grey">Add $1 for Bottle</p>
+      <p class="w3-text-grey">Add $2 for Iced Coffee/ Pure Leaf / Frappuccino</p>
+      <p class="w3-text-grey">Add $3 for 1 Side and 1 Can of Soda</p><br>
 
-      <h5>Diet Pepsi</h5>
-      <p class="w3-text-grey"></p><br>
+      <h5>BBQ Nacho Madness!</h5>
+      <p class="w3-text-grey">Nacho with cheese 3.50$ with Sour Cream</p>
+      <p class="w3-text-grey">Pulled Pork Nachos 6.50 with Cheese and Side of Sour Cream</p>
+      <p class="w3-text-grey">Brisket Nacho $7.50 with Cheese and Side Sour Cream</p>
+      <p class="w3-text-grey">Additional Toppings $1.50 each, Fried Onions - Peppers - Cole Slaw</p><br>
 
-      <h5>Ginger Ale</h5>
-      <p class="w3-text-grey"></p><br>
+      <h5>Tacos</h5>
+      <h6> All tacos come wiht Peppers, Onions, Cheese and a Side of Sour Cream
+      <p class="w3-text-grey">$7.00 Two Pulled Pork Tacos</p>
+      <p class="w3-text-grey">$9.00 Two Brisket Tacos</p>
+      <p class="w3-text-grey">$9.00 Two Chicken Tacos</p><br>
 
-      <h5>Iced Tea</h5>
-      <p class="w3-text-grey"></p><br>
+      <h5>SABRETT Hot Dogs</h5>
+      <p class="w3-text-grey">Plain Dog $2.75 - with Kraut $3.00 (Ketchup, Mustard, Relish Included)</p>
+      <p class="w3-text-grey">Collin Dog - Dog with Kraut, Pulled Pork & BBQ Sauce $3.75 </p>
+      <p class="w3-text-grey">Shawny Dog $2.75 - Dog with Brisket, Beans, $ Onions $3.75 (Ketchup, Mustard, Relish Included)</p>
+      <p class="w3-text-grey">Pulled Pork Dog $3.75 </p>
+      <p class="w3-text-grey">Jake Dog $4.00 - Loaded with everything)</p><br>
 
-      <h5>Root Beer</h5>
-      <p class="w3-text-grey"></p><br>
 
-      <h5>Water</h5>
-      <p class="w3-text-grey"></p>
+
+      <h5>Sides</h5>
+      <p class="w3-text-grey">$3.50 Mozarella Sticks</p>
+      <p class="w3-text-grey">$3.50 Smoked Mack and cheese</p>
+      <p class="w3-text-grey">$3.50 Baked Beans with burnt ends</p>
+      <p class="w3-text-grey">$3.50 Homemade Cole Slaw</p>
+      <p class="w3-text-grey">$3.50 Greens &#8226; $3.50 Fresh Cut Fries</p>
+      <p class="w3-text-grey">$3.50 Corn on the Cob</p>
+      <p class="w3-text-grey">$3.50 Baked Potatoes (After 2 PM)</p>
+
+
     </div>
     <img src="/w3images/coffeehouse2.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
   </div>
@@ -154,10 +190,13 @@ Stop in and see us today. We guarantee you will leave full and happy! </p><br>
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
     <p>Find us at 1987 NY-52, Liberty, NY 12754!</p>
     <img src="images/chick e ribs.jpg" class="w3-image" style="width:100%">
-    <br> <p><span class="w3-tag">Contact us!</span> Questions or concerns? You can reach us through our number or socials down below!</p>
+    <br> <p><span class="w3-tag">Contact us!</span> Questions or concerns? You can reach us through our number or socials down below! Follow for updates!</p>
     <form action="/action_page.php" target="_blank">
       <p>Phone number: (845) 807-1527 </p>
-      <p>Facebook: <a href="https://www.facebook.com/CHICKERIBS"> Chick E Ribs</a>
+      <p>Facebook: <a href="https://www.facebook.com/CHICKERIBS"> Chick E Ribs</a></p>
+      <p><a href="https://www.google.com/search?hl=en-US&gl=us&q=CHICK+E+RIBS+BBQ
+        +llc+Wednesday-Sunday,+1987+NY-52,+Liberty,+NY+12754&ludocid=10734369965426607198&lsig=AB
+        86z5UTpho3hm0CDxKIkF6NlXfM#lrd=0x89dcbdbd25660733:0x94f8249c44e0045e,3"> Write a Review</a> </p>
 
   </div>
 </div>
