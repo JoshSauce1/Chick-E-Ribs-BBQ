@@ -4,6 +4,7 @@
 <title>Chick E Ribs BBQ </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
 <style>
@@ -31,6 +32,38 @@ img{
 .background{
   background-color: none;
 }
+
+.map-responsive{
+
+    overflow:hidden;
+
+    padding-bottom:56.25%;
+
+    position:relative;
+
+    height:0;
+
+}
+
+.map-responsive iframe{
+
+    left:0;
+
+    top:0;
+
+    height:100%;
+
+    width:100%;
+
+    position:absolute;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+
 </style>
 </head>
 <body>
@@ -48,8 +81,9 @@ img{
       <a href="#menu" class="w3-button w3-block w3-black">MENU</a>
     </div>
     <div class="w3-col s3">
-      <a href="#where" class="w3-button w3-block w3-black">WHERE</a>
+      <a href="#where" class="w3-button w3-block w3-black">CONTACT</a>
     </div>
+
   </div>
 </div>
 
@@ -69,10 +103,14 @@ img{
 <!-- Add a background color and large text to the whole page -->
 <div class="w3-light-grey w3-large">
 
+
+
+
 <!-- About Container -->
 <div class="w3-container" id="about">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">ABOUT CHICK E RIBS</span></h5>
+
 
 
     <p>Founded in 2017 by my wife, our kids, and myself,  CHICK E RIBS set out with one main goal. ...Our goal was to bring delicious and
@@ -83,6 +121,8 @@ img{
         had straight off the smoker to your plate.
 Thank you for making CHICK E RIBS THE #1 BBQ SPOT IN SULLIVAN COUNTY.
 Stop in and see us today. We guarantee you will leave full and happy! </p><br>
+
+
     <div class="w3-panel w3-leftbar w3-light-grey">
       <p><i>"Great people, great food and great prices, what's not to love?? Pulled pork sandwich is on point along with the brisket.
         Pulled pork/Cole slaw hot dog is simply devine. Will absolutely, definitely be back in the future."</i></p>
@@ -94,6 +134,7 @@ Stop in and see us today. We guarantee you will leave full and happy! </p><br>
   <img src="images/bikers.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
     <p><strong>Opening hours:</strong> Wednesday through Sunday, 11:30AM - 9PM</p>
     <p><strong>Address:</strong> 1987 NY-52, Liberty, NY 12754</p>
+    <p><strong>Phone Number:</strong> (845) 807-1527 </p>
 
   </div>
 </div>
@@ -105,7 +146,12 @@ Stop in and see us today. We guarantee you will leave full and happy! </p><br>
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">THE MENU</span></h5>
 
     <h5 >SLOW COOKED FALL OF THE BONE RIBS, TENDER JUICY BRISKET,
-       DELICIOUS PULLED PORK, BBQ CHICKEN, SAUSAGE/PEPPERS/ONIONS, VARIOUS HOMEMADE SIDES</span></h5> <br>
+       DELICIOUS PULLED PORK, BBQ CHICKEN, SAUSAGE/PEPPERS/ONIONS, VARIOUS HOMEMADE SIDES</span></h5>
+
+      <p> <button class="button button1"><a href="tel:845-807-1527">ORDER NOW</a></button> </P>
+
+    <br>
+
 
     <div class="w3-row w3-center w3-card w3-padding">
       <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
@@ -119,18 +165,18 @@ Stop in and see us today. We guarantee you will leave full and happy! </p><br>
     <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
       <h5>Lunch Specials! (Available All Day)</h5>
       <p class="w3-text-black">Lunch Specials Come with Choice of 1 Side and a Can of Soda </p>
-      <p class="w3-text-grey">$12 Brisket Sandwich  &#8226; $10.50 Pulled Pork Sandwich  &#8226; $10.50 Sausagae & Peppers Samdwich </p>
-      <p class="w3-text-grey">$7.50 Two Pulled Pork Tacos  &#8226; $11.50 Two Brisket Tacos (With Lettuce, Peppers, Onions, Cheese and a side of Sour Cream)</p> <br>
+      <p class="w3-text-grey">$12 Brisket Sandwich  &#8226; $10.50 Pulled Pork Sandwich  &#8226; $10.50 Sausage & Peppers Samdwich </p>
+      <p class="w3-text-grey">$9.50 Two Pulled Pork Tacos  &#8226; $11.50 Two Brisket Tacos (With Lettuce, Peppers, Onions, Cheese and a side of Sour Cream)</p> <br>
 
       <h5>Ribs</h5>
-      <p class="w3-text-grey">$22.75 Full Rack &#8226; $14.50 1/2 Rack &#8226; $9.00 1/3 Rack</p>
+      <p class="w3-text-grey">$23.75 Full Rack &#8226; $14.50 1/2 Rack &#8226; $9.00 1/3 Rack</p>
       <p class="w3-text-grey">$25.75 Full Rack with 2 sides</p>
       <p class="w3-text-grey">$16.50 1/2 Rack with 2 sides</p>
       <p class="w3-text-grey">$11.00 1/3 Rack with 2 sides</p> <br>
 
       <h5>Brisket</h5>
       <p class="w3-text-grey">$10 Brisket Sandwich</p>
-      <p class="w3-text-grey">$15 Brisket Dinner</p>
+      <p class="w3-text-grey">$15 Brisket Dinner (Comes with Two Sides)</p>
       <p class="w3-text-grey">See Lunch Specials!</p> <br>
 
       <h5>Chicken (Honey Dipped Chicken Available Every Day)</h5>
@@ -160,10 +206,10 @@ Stop in and see us today. We guarantee you will leave full and happy! </p><br>
       <p class="w3-text-grey">$8.00 BEER BATTERED FISH & CHIPS!</p>
       <br>
 
-      <h5>Loaded Fries / Potatoes</h5>
+      <h5>Loaded Fries / Potatoes (Not Available After 2!)</h5>
       <p class="w3-text-grey">$7.00 Loaded Pulled Pork Fries/Baked Potatoes</p>
       <p class="w3-text-grey">$8.00 Loaded Brisket Fries/Baked Potatoes</p>
-      <p class="w3-text-grey">Served with Cheese, Bacon Bits, and a Side of Sour Cream</p>
+      <p class="w3-text-grey">Each with Cheese, Bacon Bits, and a Side of Sour Cream</p>
       <br>
 
 
@@ -192,8 +238,8 @@ Stop in and see us today. We guarantee you will leave full and happy! </p><br>
 
       <h5>SABRETT Hot Dogs</h5>
       <p class="w3-text-grey">Plain Dog $2.75 - with Kraut $3.00 (Ketchup, Mustard, Relish Included)</p>
-      <p class="w3-text-grey">Collin Dog - Dog with Kraut, Pulled Pork & BBQ Sauce $3.75 </p>
-      <p class="w3-text-grey">Shawny Dog $2.75 - Dog with Brisket, Beans, $ Onions $3.75 (Ketchup, Mustard, Relish Included)</p>
+      <p class="w3-text-grey">Collin Dog $3.75 - Dog with Kraut, Pulled Pork & BBQ Sauce  </p>
+      <p class="w3-text-grey">Shawny Dog $3.75 - Dog with Brisket, Beans, $ Onions $3.75 (Ketchup, Mustard, Relish Included)</p>
       <p class="w3-text-grey">Pulled Pork Dog $3.75 </p>
       <p class="w3-text-grey">Jake Dog $4.00 - Loaded with everything)</p><br>
 
@@ -232,10 +278,12 @@ Stop in and see us today. We guarantee you will leave full and happy! </p><br>
 <div class="w3-container" id="where" style="padding-bottom:32px;">
   <div class="w3-content" style="max-width:700px">
     <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO FIND US</span></h5>
-    <p>Find us at 1987 NY-52, Liberty, NY 12754!</p><br>
+    <p>Find us at 1987 NY-52, Liberty, NY 12754!</p>
+   <div class = "map-responsive">
 
-      <img src="images/front.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
-
+      <p><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2975.0276255124604!2d-74.72702688456181!3d41.78461827922967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dcbdbd25660733%3A0x94f8249c44e0045e!2sCHICK%20E%20RIBS%20BBQ%20llc%20Wednesday-Sunday!5e0!3m2!1sen!2sus!4v1662907805460!5m2!1sen!2sus"
+        width="100%" height="450px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> </p>
+        </div>
      <p><span class="w3-tag">Contact us!</span> Questions or concerns? You can reach us through our number or socials down below! Follow for updates!</p>
     <form action="/action_page.php" target="_blank">
       <p>Phone number: (845) 807-1527 </p>
